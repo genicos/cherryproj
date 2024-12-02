@@ -1,0 +1,3 @@
+[submodule "CherryML"]
+	path = CherryML
+	url = git@github.com:songlab-cal/CherryML.git
