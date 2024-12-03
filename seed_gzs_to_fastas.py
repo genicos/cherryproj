@@ -14,7 +14,7 @@ for root,dirs,files in os.walk(seed_dir):
 
 Path(output_dir).mkdir(parents=True, exist_ok=True)
 for seed_file in seed_files:
-    fasta_name = str(Path(os.path.basename(seed_file)).stem.split(".")[0]) + ".fasta"
+    fasta_name = str(Path(os.path.basename(seed_file)).stem.split(".")[0]) + ".txt"
     with open(os.path.join(output_dir,fasta_name), 'w') as F:
         with gzip.open(seed_file ,'rt') as S:
             for line in S:
