@@ -1,9 +1,7 @@
 import numpy as np
-
-
-
-
-
+import glob
+import pandas as pd
+import os
 def calc_stationary_dist_from_rate_matrix_file(rate_matrix_file):
     Q = np.zeros((20, 20))
 
@@ -15,8 +13,6 @@ def calc_stationary_dist_from_rate_matrix_file(rate_matrix_file):
             line = lines[i].split()[1:]
             for j in range(20):
                 Q[i-1][j] = float(line[j])
-    
-    print(Q)
 
     Q_T = Q.T
 
@@ -28,13 +24,53 @@ def calc_stationary_dist_from_rate_matrix_file(rate_matrix_file):
     # Solve the system
     pi = np.linalg.lstsq(A, b, rcond=None)[0]
 
-    print("Stationary distribution:", pi)
+    return pi
+
+def getCurrentDistributions():
+    paths = glob.glob('/Users/mikemoubarak/cherryproj/data/msa_ETC_fasta_files/*.txt')
+
+    outputDataFrame = pd.DataFrame()
+    familyNames = []
+    for path in paths:
+        with open(path, "r") as file:
+        # Read the contents of the file
+            content = file.readlines()
+    
+            familyNames.append(os.path.split(path)[1][:-4])
+    
+            countDictionary = getDistributionPerFamily(content)
+    
+            newRow = pd.DataFrame(countDictionary) 
+            newRow /= newRow.iloc[0,:].sum()
+           
+         
+            outputDataFrame = pd.concat([outputDataFrame, newRow], axis = 0)
+        
+    outputDataFrame.index = familyNames
+    return outputDataFrame
+
+def getDistributionPerFamily(list):
+
+    aminoAcidDictionary = {'A':[0],'R':[0],'N':[0],'D':[0],'C':[0],'Q':[0],
+                           'K':[0],'L':[0],'I':[0],'H':[0],'G':[0],'E':[0], 
+                           'M':[0],'F':[0],'P':[0],'S':[0],'T':[0],'W':[0],
+                           'Y':[0],'V':[0]}
+    for element in list:
+        if element[0] != '>':
+            for character in element[:-1]:
+                if character != '-':
+                    if character in aminoAcidDictionary.keys():
+                        
+                        aminoAcidDictionary[character][0] += 1
+    return aminoAcidDictionary
+
+if __name__ == '__main__':
 
 
+    Kagan_matrix_file = "/Users/mikemoubarak/cherryproj/data/learned_rate_matrix_complexI.txt"
 
+    pi = calc_stationary_dist_from_rate_matrix_file(Kagan_matrix_file)
+    currentDistributions = getCurrentDistributions()
 
-
-
-Kagan_matrix_file = "../data/learned_rate_matrix_complexI.txt"
-
-calc_stationary_dist_from_rate_matrix_file(Kagan_matrix_file)
+    piDF = pd.DataFrame(pi).T
+    print(piDF)
