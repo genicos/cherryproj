@@ -9,7 +9,7 @@ output_dir = sys.argv[2]
 seed_files = []
 for root,dirs,files in os.walk(seed_dir):
     for name in files:
-        if name.endswith(('gz')): # if fasta already generated
+        if name.endswith(('gz')): 
             seed_files.append(os.path.join(root,name))
 
 Path(output_dir).mkdir(parents=True, exist_ok=True)
