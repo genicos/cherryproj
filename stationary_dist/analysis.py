@@ -34,7 +34,7 @@ def calc_stationary_dist_from_rate_matrix_file(rate_matrix_file):
     axes.set_yticklabels(y_labels)
     axes.set_xlabel('Amino Acid')
     axes.set_ylabel('Amino Acid')
-    fig.savefig('/Users/mikemoubarak/Desktop/docSemPresentation/figure1.tiff', dpi = 300)
+    fig.savefig('../figures/figure1.tiff', dpi = 300)
     plt.close()
 
     # Add the normalization condition
@@ -48,7 +48,7 @@ def calc_stationary_dist_from_rate_matrix_file(rate_matrix_file):
     return pi
 
 def getCurrentDistributions():
-    paths = glob.glob('/Users/mikemoubarak/cherryproj/data/msa_ETC_fasta_files/*.txt')
+    paths = glob.glob('../data/msa_ETC_fasta_files/*.txt')
 
     outputDataFrame = pd.DataFrame()
     familyNames = []
@@ -88,7 +88,7 @@ def getDistributionPerFamily(list):
 if __name__ == '__main__':
 
 
-    Kagan_matrix_file = "/Users/mikemoubarak/cherryproj/data/learned_rate_matrix_complexI.txt"
+    Kagan_matrix_file = "../data/learned_rate_matrix_complexI.txt"
 
     pi = calc_stationary_dist_from_rate_matrix_file(Kagan_matrix_file)
     
@@ -104,7 +104,7 @@ if __name__ == '__main__':
     axes.bar(piDF.index, piDF['value'], color = 'gray')
     axes.set_xlabel('Amino Acid')
     axes.set_ylabel('Steady State Frequency')
-    fig.savefig('/Users/mikemoubarak/Desktop/docSemPresentation/figure2.tiff', dpi = 300)
+    fig.savefig('../figures/figure2.tiff', dpi = 300)
     plt.close()
 
     pi = calc_stationary_dist_from_rate_matrix_file(Kagan_matrix_file)
@@ -129,7 +129,7 @@ if __name__ == '__main__':
     axes.set_xlabel('Protein Family')
     axes.set_ylabel('KL Divergence')
     axes.tick_params(axis='x', rotation=75, size = 2)
-    fig.savefig('/Users/mikemoubarak/Desktop/docSemPresentation/figure3.tiff', dpi = 300)
+    fig.savefig('../figures/figure3.tiff', dpi = 300)
     plt.close()
 
     x_labels = ["A","R","N","D","C","Q","E","G","H","I","L","K","M","F","P","S","T","W","Y","V"]
@@ -151,7 +151,7 @@ if __name__ == '__main__':
     #axes.set_yticks(np.arange(len(y_labels)))
     #axes.set_yticklabels(y_labels)
 
-    fig.savefig('/Users/mikemoubarak/Desktop/docSemPresentation/figure4.tiff', dpi = 300)
+    fig.savefig('../figures/figure4.tiff', dpi = 300)
 #matrix_file = "../data/learned_rate_matrix_complexI.txt"
 
 #pi = calc_stationary_dist_from_rate_matrix_file(matrix_file)
