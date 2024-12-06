@@ -20,10 +20,7 @@ def calc_dist_matrix(structure, chain_id=None):
     dist_matrix = np.zeros((n_atoms, n_atoms))
     for i in range(n_atoms):
         for j in range(i + 1, n_atoms):
-            if abs(i-j) > 7:
-                dist = np.inf # disregard closeness of contacts that are within 7 amino acids of each other in primary sequence
-            else:
-                dist = atoms[i] - atoms[j]
+            dist = atoms[i] - atoms[j]
             dist_matrix[i, j] = dist
             dist_matrix[j, i] = dist
     return dist_matrix
