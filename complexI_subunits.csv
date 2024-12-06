@@ -1,0 +1,51 @@
+﻿#,Human/Bovine subunit,Human protein,Protein description (UniProt),pfam,Type,Chain,Auth Name,membrane
+1,NDUFS7 / PSST / NUKM,NDUS7_HUMAN,NADH dehydrogenase [ubiquinone] iron-sulfur protein 7; mitochondrial EC 1.6.5.3 EC 1.6.99.3,PF01058,Core,C,C,FALSE
+2,NDUFS8 / TYKY / NUIM,NDUS8_HUMAN,NADH dehydrogenase [ubiquinone] iron-sulfur protein 8; mitochondrial EC 1.6.5.3 EC 1.6.99.3,PF12838,Core,B,B,FALSE
+3,NDUFV2 / 24kD / NUHMc,NDUV2_HUMAN,NADH dehydrogenase [ubiquinone] flavoprotein 2; mitochondrial EC 1.6.5.3 EC 1.6.99.3,PF01257,Core,N,O,FALSE
+4,NDUFS3 / 30kD / NUGM,NDUS3_HUMAN,NADH dehydrogenase [ubiquinone] iron-sulfur protein 3; mitochondrial EC 1.6.5.3 EC 1.6.99.3,PF00329,Core,O,P,FALSE
+5,NDUFS2 / 49kD / NUCM,NDUS2_HUMAN,NADH dehydrogenase [ubiquinone] iron-sulfur protein 2; mitochondrial EC 1.6.5.3 EC 1.6.99.3,PF00346,Core,P,Q,FALSE
+6,NDUFV1 / 51kD / NUBM,NDUV1_HUMAN,NADH dehydrogenase [ubiquinone] flavoprotein 1; mitochondrial EC 1.6.5.3 EC 1.6.99.3,PF01512,Core,A,A,FALSE
+7,NDUFS1 / 75kD / NUAM,NDUS1_HUMAN,NADH-ubiquinone oxidoreductase 75 kDa subunit; mitochondrial EC 1.6.5.3 EC 1.6.99.3,PF00384,Core,L,M,FALSE
+8,ND1 / NU1M,NU1M_HUMAN,NADH-ubiquinone oxidoreductase chain 1 EC 1.6.5.3,PF00146,Core,PA,s,TRUE
+9,ND2 / NU2M,NU2M_HUMAN,NADH-ubiquinone oxidoreductase chain 2 EC 1.6.5.3,PF00361; PF06444,Core,GA,i,TRUE
+10,ND3 / NU3M,NU3M_HUMAN,NADH-ubiquinone oxidoreductase chain 3 EC 1.6.5.3,PF00507,Core,HA,j,TRUE
+11,ND4 / NU4M,NU4M_HUMAN,NADH-ubiquinone oxidoreductase chain 4 EC 1.6.5.3,PF01059; PF00361,Core,OA,r,TRUE
+12,ND4L / NULM,NU4LM_HUMAN,NADH-ubiquinone oxidoreductase chain 4L EC 1.6.5.3,PF00420,Core,IA,k,TRUE
+13,ND5 / NU5M,NU5M_HUMAN,NADH-ubiquinone oxidoreductase chain 5 EC 1.6.5.3,PF00361; PF06455; PF00662,Core,JA,l,TRUE
+14,ND6 / NU6M,NU6M_HUMAN,NADH-ubiquinone oxidoreductase chain 6 EC 1.6.5.3,PF00499,Core,KA,m,TRUE
+15,NDUFS6 / 13A,NDUS6_HUMAN,NADH dehydrogenase [ubiquinone] iron-sulfur protein 6; mitochondrial,PF10276,Core accessory,R,T,
+16,NDUFA12 / B17.2,NDUAC_HUMAN,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 12,PF05071,Core accessory,M,N,
+17,NDUFS4 / AQDQ,NDUS4_HUMAN,NADH dehydrogenase [ubiquinone] iron-sulfur protein 4; mitochondrial,PF04800,Core accessory,K,L,
+18,NDUFA9 / 39kDa,NDUA9_HUMAN,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 9; mitochondrial,PF01370,Core accessory,I,J,
+19,NDUFAB1 / ACPM,ACPM_HUMAN,Acyl carrier protein; mitochondrial,PF00550,Core accessory,F; V,G; X,
+20,NDUFA2 / B8,NDUA2_HUMAN,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 2,PF05047,Core accessory,E,F,
+21,NDUFA1 / MFWE,NDUA1_HUMAN,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 1,PF15879,Core accessory,Q,S,
+22,NDUFB3 / B12,NDUB3_HUMAN,NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 3,PF08122,Core accessory,X,Z,
+23,NDUFA5 / AB13,NDUA5_HUMAN,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 5,PF04716,Core accessory,G,H,
+24,NDUFA6 / B14,NDUA6_HUMAN,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 6,PF05347,Core accessory,D,E,
+25,NDUFA11 / B14.7,NDUAB_HUMAN,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 11,PF02466,Core accessory,T,V,
+26,NDUFB11 / ESSS,NDUBB_HUMAN,NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 11; mitochondrial,PF10183,Core accessory,,,
+27,NDUFS5 / PFFD,NDUS5_HUMAN,NADH dehydrogenase [ubiquinone] iron-sulfur protein 5,PF10200,Core accessory,,,
+28,NDUFB4 / B15,NDUB4_HUMAN,NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 4,PF07225,Core accessory,,,
+29,NDUFA13 /A13,NDUAD_HUMAN,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 13,PF06212,Core accessory,U,W,
+30,NDUFB7 / B18,NDUB7_HUMAN,NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 7,PF05676,Core accessory,,,
+31,NDUFA8 / PGIV,NDUA8_HUMAN,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 8,PF06747,Core accessory,,,
+32,NDUFB9 / B22,NDUB9_HUMAN,NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 9,PF05347,Core accessory,,,
+33,NDUFB10 / PDSW,NDUBA_HUMAN,NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 10,PF10249,Core accessory,,,
+34,NDUFB8 / ASHI,NDUB8_HUMAN,NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 8; mitochondrial,PF05821,Core accessory,,,
+35,NDUFC2 / B14.5B,NDUC2_HUMAN,NADH dehydrogenase [ubiquinone] 1 subunit C2,PF06374,Core accessory,,,
+36,NDUFB2 / AGGG,NDUB2_HUMAN,NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 2; mitochondrial,PF14813,Core accessory,W,Y,
+37,NDUFA7 / B14.5A,NDUA7_HUMAN,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 7,PF07347,Core accessory,H,I,
+38,NDUFA3 / B9,NDUA3_HUMAN,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 3,PF14987,Core accessory,S,U,
+39,NDUFA4 / MLRQc;d,NDUA4_HUMAN,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 4,PF06522,Core accessory,,,
+40,NDUFB5 / SGDH,NDUB5_HUMAN,NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 5; mitochondrial,PF09781,Core accessory,Y,a,
+41,NDUFB1 / MNLL,NDUB1_HUMAN,NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 1,PF08040,Core accessory,,,
+42,NDUFC1 / KFYI,NDUC1_HUMAN,NADH dehydrogenase [ubiquinone] 1 subunit C1; mitochondrial,PF15088,Core accessory,,,
+43,NDUFA10 / 42kD,NDUAA_HUMAN,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 10; mitochondrial,PF01712,Core accessory,,,
+44,NDUFA4L2,NUA4L_HUMAN,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex subunit 4-like 2,PF15880,Core accessory,,,
+45,NDUFV3,NDUV3_HUMAN,NADH dehydrogenase [ubiquinone] flavoprotein 3; 10kDa,-,Core accessory,J,K,
+46,NDUFB6,NDUB6_HUMAN,NADH dehydrogenase [ubiquinone] 1 beta subcomplex subunit 6,PF09782,Core accessory,,,
+47,NDUFAF1c,CIA30_HUMAN,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex; assembly factor 1,PF08547,Assembly factor proteins,,,
+48,NDUFAF2,MIMIT_HUMAN,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex; assembly factor 2,PF05071,Assembly factor proteins,,,
+49,NDUFAF3,NDUF3_HUMAN,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex assembly factor 3,PF05071,Assembly factor proteins,,,
+50,NDUFAF4,NDUF4_HUMAN,NADH dehydrogenase [ubiquinone] 1 alpha subcomplex; assembly factor 4,PF06784,Assembly factor proteins,,,
